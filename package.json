@@ -64,6 +64,7 @@
     "react-router": "^6.3.0",
     "react-router-dom": "^6.3.0",
     "react-use": "^17.4.0",
+    "storybook-dark-mode": "^1.1.0",
     "unocss": "^0.32.12",
     "unplugin-auto-import": "^0.7.1",
     "vite": "^2.9.7",

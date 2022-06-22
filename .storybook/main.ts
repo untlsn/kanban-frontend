@@ -11,7 +11,8 @@ module.exports = {
   "addons": [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "@storybook/addon-interactions"
+    "@storybook/addon-interactions",
+    "storybook-dark-mode",
   ],
   "framework": "@storybook/react",
   "core": {
@@ -30,6 +31,14 @@ module.exports = {
           imports: [
             'react',
             'react-router-dom',
+            {
+              mobx: ['makeAutoObservable'],
+              'mobx-react-lite': [
+                'useLocalObservable',
+                ['observer', 'mobxObserver'],
+              ],
+              '/src/hooks/O': [['default', 'O']],
+            },
           ],
         }),
       ]

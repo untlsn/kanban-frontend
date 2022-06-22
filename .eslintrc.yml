@@ -19,3 +19,11 @@ rules:
   '@typescript-eslint/no-shadow': off
   '@typescript-eslint/no-redeclare': off
   import/extensions: off
+  react/react-in-jsx-scope: off
+  import/no-extraneous-dependencies: off
+  react/destructuring-assignment: off
+  max-len: off
+  react/prop-types: off
+  react/jsx-props-no-spreading: off
+  react/jsx-no-undef: off
+  react/require-default-props: off

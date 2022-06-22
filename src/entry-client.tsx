@@ -1,13 +1,11 @@
-import React, { FC } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
-import { HeadProvider as _HeadProvider } from 'react-head';
 import App from './App';
 import 'uno.css';
 import '~/assets/style/reset.css';
 import { getLazyRoutes } from '~/routes';
-
-const HeadProvider = _HeadProvider as FC<{ children: any }>;
+import HeadProvider from '~/providers/HeadProvider';
 
 const routes = getLazyRoutes();
 

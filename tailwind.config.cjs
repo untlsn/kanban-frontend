@@ -7,9 +7,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        react: {
-          blue: '#61dafb',
-          dark: '#282c34',
+        darkPrimaryMain: '#2C2C38',
+        dark: {
+          text: '#fff',
+          primary: {
+            main: '#2C2C38'
+          }
+        },
+        text: '#35495E',
+        primary: {
+          main: '#c7ced3',
         }
       },
     },

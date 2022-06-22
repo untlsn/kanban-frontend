@@ -80,6 +80,10 @@ a {
   text-decoration: inherit;
 }
 
+button {
+  background-color: transparent;
+}
+
 /*
 Add the correct font weight in Edge and Safari.
 */
