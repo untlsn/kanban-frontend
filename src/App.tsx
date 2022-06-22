@@ -10,12 +10,16 @@ import general from '~/store/general';
 
 export default function App({ routes }: { routes: Route[] }) {
   useEffect(() => {
-    const darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const fromStore = localStorage.getItem('general.darkMode');
+    const darkMode = fromStore
+      ? fromStore == 'true'
+      : window.matchMedia('(prefers-color-scheme: dark)').matches;
 
     const { classList } = document.body;
     general.switchDarkMode(darkMode);
 
     autorun(() => {
+      localStorage.setItem('general.darkMode', String(general.darkMode));
       if (general.darkMode) {
         classList.add('dark');
       } else {

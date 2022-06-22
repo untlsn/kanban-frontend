@@ -15,7 +15,7 @@ module.exports = {
         },
         text: '#35495E',
         primary: '#fff',
-        secondary: '#c7ced3',
+        secondary: '#EEF2FD',
       },
     },
   },

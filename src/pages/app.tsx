@@ -4,7 +4,7 @@ import general from '~/store/general';
 
 function App() {
   return (
-    <div className="flex-1 flex min-h-screen">
+    <div className="flex-1 flex">
       <Nav />
       <O>
         {() => (
@@ -17,7 +17,9 @@ function App() {
           </Button>
         )}
       </O>
-      <main className="flex-1" />
+      <main className="flex-1">
+        asdasd
+      </main>
     </div>
   );
 }

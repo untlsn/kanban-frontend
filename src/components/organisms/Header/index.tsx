@@ -7,10 +7,10 @@ export interface HeaderProps {
 
 function Header(props: HeaderProps) {
   return (
-    <header className="bg-primary dark:bg-dark-primary flex gap-2 items-center px-4">
+    <header className="bg-primary dark:bg-dark-primary flex gap-2 items-center px-4 shadow h-12">
       <O>
         {() => (
-          <div className={`flex flex-1 items-center transition-translate duration-500 ${general.sidebarVisible ? 'lg:translate-x-24' : ''}`}>
+          <div className={`flex flex-1 items-center transition-translate duration-700 ${general.sidebarVisible ? 'lg:translate-x-24' : ''}`}>
             <img
               src={logo}
               alt="logo"
