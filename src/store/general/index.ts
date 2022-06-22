@@ -12,6 +12,9 @@ const General = types.model({
     showSidebar() {
       self.sidebarVisible = true;
     },
+    switchDarkMode(darkMode?: boolean | any) {
+      self.darkMode = typeof darkMode == 'boolean' ? darkMode : !self.darkMode;
+    },
   }));
 
 // Store containing general options like darkMode or sidebar visibility

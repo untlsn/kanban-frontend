@@ -1,10 +1,11 @@
 import { observer } from 'mobx-react-lite';
 import general from '~/store/general';
 import Button from '~/components/atom/Button';
+import ThemeSwitch from '~/components/organisms/Nav/ThemeSwitch';
 
 const Nav = observer(() => (
-  <nav className={`w-100 bg-primary-main dark:bg-dark-primary-main transition-transform ${general.sidebarVisible ? '' : 'absolute -translate-x-full'}`}>
-
+  <nav className={`w-100 bg-primary dark:bg-dark-primary transition-transform ${general.sidebarVisible ? '' : 'absolute -translate-x-full'}`}>
+    <ThemeSwitch />
     <div className="text-center">
       <Button
         className="space-x-2 align-middle transition-opacity hocus:opacity-60"
