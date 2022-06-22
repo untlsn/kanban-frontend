@@ -1,11 +1,21 @@
 import { types } from 'mobx-state-tree';
+import devtools from 'mobx-devtools-mst';
 
 const General = types.model({
   darkMode: false,
-  showSidebar: true,
-});
+  sidebarVisible: true,
+})
+  .actions((self) => ({
+    hideSidebar() {
+      self.sidebarVisible = false;
+    },
+    showSidebar() {
+      self.sidebarVisible = true;
+    },
+  }));
 
 // Store containing general options like darkMode or sidebar visibility
 const general = General.create();
+devtools(general);
 
 export default general;
