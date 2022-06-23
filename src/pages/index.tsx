@@ -17,7 +17,7 @@ export default function App() {
           Zarejestruj się
         </Link>
         <p>
-          <span>Nie chcesz kota w worku? </span>
+          <span>Nie chcesz konta w worku? </span>
           <Link to="/app" className="hocus:underline">
             Wypróbuj!
           </Link>
