@@ -1,12 +1,12 @@
 import { observer } from 'mobx-react-lite';
 import general from '~/store/general';
 import Button from '~/components/atom/Button';
-import ThemeSwitch from '~/components/organisms/Nav/ThemeSwitch';
-import Boards from '~/components/organisms/Nav/Boards';
+import ThemeSwitch from './parts/ThemeSwitch';
+import Boards from './parts/Boards';
 
 const Nav = observer(() => (
   <nav
-    className={`w-100 flex flex-col bg-primary py-4 dark:bg-dark-primary transition-transform duration-500 border-(r-2 black/20) ${
+    className={`w-100 flex flex-col bg-primary p-(y-4 x-8) dark:bg-dark-primary transition-transform duration-500 border-(r-2 black/20) ${
       general.sidebarVisible ? '' : '-translate-x-full absolute bottom-0 z-100 h-[calc(100vh-3rem)]'
     }`}
   >

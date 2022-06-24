@@ -5,6 +5,7 @@ import {
   presetWind,
   presetUno,
   presetIcons,
+  presetWebFonts,
 } from 'unocss';
 // @ts-ignore
 import twConfig from './tailwind.config.cjs';
@@ -58,6 +59,16 @@ export default defineConfig({
       extraProperties: {
         display: 'inline-block',
         'vertical-align': 'middle',
+      },
+    }),
+    presetWebFonts({
+      fonts: {
+        sans: [
+          {
+            name: 'Roboto',
+            weights: [400, 500],
+          },
+        ],
       },
     }),
   ],

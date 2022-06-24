@@ -59,6 +59,7 @@
     "mobx-devtools-mst": "^0.9.30",
     "mobx-react-lite": "^3.4.0",
     "mobx-state-tree": "^5.1.5",
+    "nanoid": "^4.0.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-head": "^3.4.0",

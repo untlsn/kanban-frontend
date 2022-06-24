@@ -1,0 +1,25 @@
+@keyframes stretch {
+  from {
+    transform: translateX(-14rem);
+  }
+  to {
+    transform: translateX(-2rem);
+  }
+}
+
+.stretch {
+  animation: stretch 0.3s forwards;
+}
+
+@keyframes unstretch {
+  from {
+    transform: translateX(-2rem);
+  }
+  to {
+    transform: translateX(-14rem);
+  }
+}
+
+.unstretch {
+  animation: unstretch 0.3s forwards;
+}
