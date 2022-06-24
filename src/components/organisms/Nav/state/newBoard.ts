@@ -1,23 +1,21 @@
 import { types } from 'mobx-state-tree';
 import devtools from 'mobx-devtools-mst';
-import InputEv from '~/types/InputEv';
 
 const NewBoard = types
   .model({
-    text: '',
     isOpen: false,
-    closing: false,
+    error: '',
   })
   .actions((self) => ({
-    bindIt(ev: InputEv) {
-      self.text = ev.currentTarget.value;
-    },
     open() {
       self.isOpen = true;
     },
     close() {
       self.isOpen = false;
-      self.text = '';
+      self.error = '';
+    },
+    setError(error: string) {
+      self.error = error;
     },
   }));
 

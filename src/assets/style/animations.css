@@ -1,6 +1,6 @@
 @keyframes stretch {
   from {
-    transform: translateX(-14rem);
+    transform: translateX(-8rem);
   }
   to {
     transform: translateX(-2rem);
@@ -16,7 +16,7 @@
     transform: translateX(-2rem);
   }
   to {
-    transform: translateX(-14rem);
+    transform: translateX(-8rem);
   }
 }
 

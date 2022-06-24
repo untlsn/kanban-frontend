@@ -1,6 +1,7 @@
 import Nav from '~/components/organisms/Nav';
 import Button from '~/components/atom/Button';
 import general from '~/store/general';
+import KanbanMain from '~/components/organisms/KanbanMain';
 
 function App() {
   return (
@@ -17,9 +18,7 @@ function App() {
           </Button>
         )}
       </O>
-      <main className="flex-1">
-        asdasd
-      </main>
+      <KanbanMain />
     </div>
   );
 }

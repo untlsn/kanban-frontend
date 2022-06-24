@@ -10,7 +10,7 @@ function Boards() {
       <O>
         {() => (
           <p className="uppercase font-500">
-            boards ({kanban.boards.size})
+            Tablice ({kanban.boards.size})
           </p>
         )}
       </O>
@@ -19,7 +19,7 @@ function Boards() {
         newBoard.isOpen
           ? <AddBoard />
           : (
-            <BoardButton onClick={newBoard.open}>
+            <BoardButton height="h-15" onClick={newBoard.open}>
               +create new board
             </BoardButton>
           )

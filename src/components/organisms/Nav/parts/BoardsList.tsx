@@ -3,7 +3,7 @@ import BoardButton from '~/components/organisms/Nav/parts/BoardButton';
 
 function BoardsList() {
   return (
-    <ul className="py-4 space-y-4">
+    <ul className="py-4 space-y-2">
       <O>
         {() => [...kanban.boards.keys()].map((id) => (
           <BoardPoint key={id} id={id} />

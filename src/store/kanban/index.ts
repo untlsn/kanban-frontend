@@ -14,9 +14,18 @@ const Kanban = types
   })
   .actions((self) => ({
     addBoard(name: string) {
+      if (!name) return;
       const id = nanoid();
       self.boards.set(id, Board.create({ id, name }));
       self.selected.selectBoard(id);
+    },
+  }))
+  .views((self) => ({
+    get selectedBoard() {
+      const { board } = self.selected;
+      return board
+        ? self.boards.get(board)
+        : undefined;
     },
   }));
 
