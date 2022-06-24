@@ -5,6 +5,6 @@ const Board = types.model({
   name: types.string,
 });
 
-type Board = typeof Board;
+type Board = ReturnType<typeof Board.create>;
 
 export default Board;

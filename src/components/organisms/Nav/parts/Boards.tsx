@@ -2,6 +2,7 @@ import kanban from '~/store/kanban';
 import BoardButton from '~/components/organisms/Nav/parts/BoardButton';
 import newBoard from '~/components/organisms/Nav/state/newBoard';
 import AddBoard from '~/components/organisms/Nav/parts/AddBoard';
+import BoardsList from '~/components/organisms/Nav/parts/BoardsList';
 
 function Boards() {
   return (
@@ -13,6 +14,7 @@ function Boards() {
           </p>
         )}
       </O>
+      <BoardsList />
       <O>{() => (
         newBoard.isOpen
           ? <AddBoard />
