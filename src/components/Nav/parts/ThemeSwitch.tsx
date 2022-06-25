@@ -1,5 +1,5 @@
 import { observer } from 'mobx-react-lite';
-import Button from '~/components/Button';
+import { Button } from '~/components';
 import { general } from '~/store';
 
 const ThemeSwitch = observer(() => {

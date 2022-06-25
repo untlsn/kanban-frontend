@@ -1,5 +1,5 @@
 import { newBoard } from '~/components/Nav/state';
-import Button from '~/components/Button';
+import { Button } from '~/components';
 import '~/assets/style/animations.css';
 import { kanban } from '~/store';
 

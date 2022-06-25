@@ -1,4 +1,4 @@
-import Button from '~/components/Button';
+import { Button } from '~/components';
 import { kanban } from '~/store';
 import { Title } from '~/components/KanbanMain/parts';
 
