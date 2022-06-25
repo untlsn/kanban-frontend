@@ -1,4 +1,4 @@
-import Button from '~/components/atom/Button';
+import Button from '~/components/Button';
 
 interface BoardButtonProps {
   children: any

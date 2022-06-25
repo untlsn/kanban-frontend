@@ -1,7 +1,5 @@
-import Nav from '~/components/organisms/Nav';
-import Button from '~/components/atom/Button';
-import general from '~/store/general';
-import KanbanMain from '~/components/organisms/KanbanMain';
+import { Button, Nav, KanbanMain } from '~/components';
+import { general } from '~/store';
 
 function App() {
   return (

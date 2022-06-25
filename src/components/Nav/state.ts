@@ -19,8 +19,6 @@ const NewBoard = types
     },
   }));
 
-const newBoard = NewBoard.create();
+export const newBoard = NewBoard.create();
 
 devtools(newBoard);
-
-export default newBoard;

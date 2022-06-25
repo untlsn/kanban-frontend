@@ -1,5 +1,5 @@
 import logo from '~/assets/images/logo.svg';
-import general from '~/store/general';
+import { general } from '~/store';
 
 export interface HeaderProps {
   username?: string,

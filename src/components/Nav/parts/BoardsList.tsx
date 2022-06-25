@@ -1,5 +1,5 @@
-import kanban from '~/store/kanban';
-import BoardButton from '~/components/organisms/Nav/parts/BoardButton';
+import { kanban } from '~/store';
+import { BoardButton } from '~/components/Nav/parts';
 
 function BoardsList() {
   return (

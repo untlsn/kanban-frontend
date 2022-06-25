@@ -1,8 +1,6 @@
-import kanban from '~/store/kanban';
-import BoardButton from '~/components/organisms/Nav/parts/BoardButton';
-import newBoard from '~/components/organisms/Nav/state/newBoard';
-import AddBoard from '~/components/organisms/Nav/parts/AddBoard';
-import BoardsList from '~/components/organisms/Nav/parts/BoardsList';
+import { newBoard } from '~/components/Nav/state';
+import { AddBoard, BoardsList, BoardButton } from '~/components/Nav/parts';
+import { kanban } from '~/store';
 
 function Boards() {
   return (

@@ -5,7 +5,7 @@ import { Link, Title } from 'react-head';
 import { autorun } from 'mobx';
 import type { Route } from '~/routes';
 import favicon from '~/assets/images/favicon.svg';
-import Header from '~/components/organisms/Header';
+import Header from '~/components/Header';
 import general from '~/store/general';
 
 export default function App({ routes }: { routes: Route[] }) {

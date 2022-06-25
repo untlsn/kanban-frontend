@@ -1,8 +1,7 @@
 import { observer } from 'mobx-react-lite';
-import general from '~/store/general';
-import Button from '~/components/atom/Button';
-import ThemeSwitch from './parts/ThemeSwitch';
-import Boards from './parts/Boards';
+import { general } from '~/store';
+import Button from '~/components/Button';
+import { ThemeSwitch, Boards } from './parts';
 
 const Nav = observer(() => (
   <nav

@@ -1,7 +1,7 @@
-import newBoard from '~/components/organisms/Nav/state/newBoard';
-import Button from '~/components/atom/Button';
+import { newBoard } from '~/components/Nav/state';
+import Button from '~/components/Button';
 import '~/assets/style/animations.css';
-import kanban from '~/store/kanban';
+import { kanban } from '~/store';
 
 function AddBoard() {
   const [closing, setClosing] = useState(false);

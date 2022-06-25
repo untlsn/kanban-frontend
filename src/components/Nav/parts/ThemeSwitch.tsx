@@ -1,8 +1,6 @@
 import { observer } from 'mobx-react-lite';
-import Button from '~/components/atom/Button';
-import general from '~/store/general';
-
-// dark:bg-opacity-30 bg-opacity-10
+import Button from '~/components/Button';
+import { general } from '~/store';
 
 const ThemeSwitch = observer(() => {
   const opacity = general.darkMode ? 0.3 : 0.1;
