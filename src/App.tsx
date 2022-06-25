@@ -29,7 +29,7 @@ export default function App({ routes }: { routes: Route[] }) {
   }, []);
 
   return (
-    <div className="bg-secondary text-text dark:(bg-dark-secondary text-dark-text) min-h-screen flex flex-col font-sans">
+    <div className="bg-secondary text-text dark:(bg-dark-secondary text-dark-text) min-h-screen flex flex-col font-sans relative z-1">
       <Link rel="icon" type="image/svg+xml" href={favicon} />
       <Title>App</Title>
       <Header />
