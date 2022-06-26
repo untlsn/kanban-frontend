@@ -1,7 +1,7 @@
 import { types } from 'mobx-state-tree';
 
 const Selected = types
-  .model({
+  .model('selected', {
     board: types.maybe(types.string),
     point: types.maybe(types.string),
   })

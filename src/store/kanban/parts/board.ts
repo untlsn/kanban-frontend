@@ -1,6 +1,6 @@
 import { types } from 'mobx-state-tree';
 
-const Board = types.model({
+const Board = types.model('board', {
   id: types.string,
   name: types.string,
 });

@@ -1,7 +1,7 @@
 import { types } from 'mobx-state-tree';
 import devtools from 'mobx-devtools-mst';
 
-const General = types.model({
+const General = types.model('general', {
   darkMode: false,
   sidebarVisible: true,
 })

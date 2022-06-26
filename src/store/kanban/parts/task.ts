@@ -1,7 +1,7 @@
 import { types } from 'mobx-state-tree';
 import Subtask from './subtask';
 
-const Task = types.model({
+const Task = types.model('task', {
   title: types.string,
   desk: types.string,
   status: types.number,

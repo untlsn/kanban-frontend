@@ -4,13 +4,14 @@ import { nanoid } from 'nanoid';
 import {
   Board, Task, Selected, Status,
 } from './parts';
+import { getFromStorage } from '~/store/kanban/localStorage';
 
-const Kanban = types
-  .model({
+export const Kanban = types
+  .model('kanban', {
     boards: types.map(Board),
     tasks: types.map(Task),
-    statuses: types.array(Status),
-    selected: Selected,
+    statuses: types.map(Status),
+    selected: types.optional(Selected, {}),
   })
   .actions((self) => ({
     addBoard(name: string) {
@@ -18,6 +19,10 @@ const Kanban = types
       const id = nanoid();
       self.boards.set(id, Board.create({ id, name }));
       self.selected.selectBoard(id);
+    },
+    addStatus() {
+      const id = nanoid();
+      self.statuses.set(id, Status.create({ id }));
     },
   }))
   .views((self) => ({
@@ -30,9 +35,7 @@ const Kanban = types
   }));
 
 // Store containing boards, tasks, statuses
-const kanban = Kanban.create({
-  selected: Selected.create(),
-});
+const kanban = getFromStorage();
 devtools(kanban);
 
 export default kanban;

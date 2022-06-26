@@ -2,7 +2,7 @@ import { types } from 'mobx-state-tree';
 import devtools from 'mobx-devtools-mst';
 
 const NewBoard = types
-  .model({
+  .model('NewBoard', {
     isOpen: false,
     error: '',
   })
