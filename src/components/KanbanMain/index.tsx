@@ -11,9 +11,9 @@ const KanbanMain = observer(() => {
   }
 
   return (
-    <main className="flex-1">
+    <main className="flex-1 overflow-x-hidden">
       <Header />
-      <ul className="h-[calc(100%-68px)] flex items-stretch p-4 children:w-80 gap-4">
+      <ul className="h-[calc(100%-68px)] w-[inherit] scroll-x flex items-stretch p-4 children:(w-80 flex-none) gap-4">
         <O>{() => [...kanban.statuses.keys()].map((id) => (
           <StatusBar id={id} key={id} />
         ))}

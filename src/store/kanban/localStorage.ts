@@ -10,7 +10,14 @@ function dataFrom(key: string) {
 const KEY = 'store/kanban';
 
 export const getFromStorage = () => {
-  const kanban = Kanban.create(dataFrom(KEY) as any);
+  const data = dataFrom(KEY) as any;
+
+  const kanban = Kanban.create({
+    ...dataFrom(KEY),
+    selected: {
+      board: data?.selected?.board,
+    },
+  });
 
   onSnapshot(kanban, (snapshot) => {
     localStorage.setItem(KEY, JSON.stringify(snapshot));

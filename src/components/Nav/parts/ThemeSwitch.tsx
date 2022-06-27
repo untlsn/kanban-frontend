@@ -8,7 +8,7 @@ const ThemeSwitch = observer(() => {
 
   return (
     <div
-      className="text-xl flex items-center justify-center gap-2 m-4 p-4 rounded"
+      className="text-xl flex justify-center gap-2 m-4 p-4 rounded"
       style={{
         background: `linear-gradient(90deg, transparent 0%, ${color} 15%, ${color} 85%, transparent 100%)`,
       }}

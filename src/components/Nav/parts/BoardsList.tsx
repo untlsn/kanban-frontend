@@ -25,7 +25,7 @@ function BoardPoint(props: { id: string }) {
           }}
           selected={kanban.selected.board == board.id}
         >
-          <span>{board.name}</span>
+          {board.name}
         </BoardButton>
       )}
     </O>

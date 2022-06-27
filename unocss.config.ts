@@ -58,7 +58,9 @@ export default defineConfig({
     presetIcons({
       extraProperties: {
         display: 'inline-block',
-        'vertical-align': 'middle',
+        'vertical-align': 'top',
+        height: 'auto',
+        'min-height': '1em',
       },
     }),
     presetWebFonts({

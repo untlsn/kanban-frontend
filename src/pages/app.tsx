@@ -5,7 +5,7 @@ import { general } from '~/store';
 
 function App() {
   return (
-    <div className="flex-1 flex">
+    <div className="flex-1 flex overflow-hidden">
       <Nav />
       <O>
         {() => (

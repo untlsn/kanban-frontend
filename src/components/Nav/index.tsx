@@ -16,7 +16,7 @@ const Nav = observer(() => (
         className="space-x-2 align-middle transition-opacity hocus:opacity-60"
         onClick={general.hideSidebar}
       >
-        <i className="i-bi-eye-slash" />
+        <i className="i-bi-eye-slash text-xl" />
         <span>Schowaj pasek boczny</span>
       </Button>
     </div>

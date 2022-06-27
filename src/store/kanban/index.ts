@@ -22,7 +22,8 @@ export const Kanban = types
     },
     addStatus() {
       const id = nanoid();
-      self.statuses.set(id, { id });
+      self.statuses.set(id, { id, name: `zadania ${self.statuses.size}` });
+      self.selected.selectStatus(id);
     },
   }))
   .views((self) => ({
