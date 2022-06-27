@@ -17,12 +17,12 @@ export const Kanban = types
     addBoard(name: string) {
       if (!name) return;
       const id = nanoid();
-      self.boards.set(id, Board.create({ id, name }));
+      self.boards.set(id, { id, name });
       self.selected.selectBoard(id);
     },
     addStatus() {
       const id = nanoid();
-      self.statuses.set(id, Status.create({ id }));
+      self.statuses.set(id, { id });
     },
   }))
   .views((self) => ({
