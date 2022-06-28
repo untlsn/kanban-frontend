@@ -46,3 +46,6 @@ rules:
   no-underscore-dangle: off
   no-use-before-define: off
   jsx-a11y/no-autofocus: off
+  react/function-component-definition:
+    - 2
+    - namedComponents: arrow-function

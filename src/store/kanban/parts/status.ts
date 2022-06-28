@@ -5,6 +5,7 @@ const Status = types
     id: types.string,
     name: 'zadania 1',
     color: '#F44336',
+    board: types.string,
   })
   .actions((self) => ({
     changeColor(color: string) {

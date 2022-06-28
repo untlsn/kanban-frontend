@@ -5,7 +5,7 @@ const Task = types.model('task', {
   title: types.string,
   desk: types.string,
   status: types.number,
-  _board: types.string,
+  board: types.string,
   subtasks: types.array(Subtask),
 });
 
